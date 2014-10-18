@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "PNColor.h"
 
-
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
 @interface PNCircleChart : UIView
@@ -28,7 +27,6 @@
 @property (nonatomic, assign) float  labelFontSize;
 @property (nonatomic) BOOL clockwise;
 @property (nonatomic) BOOL editable;
-
 
 @property(nonatomic,strong) CAShapeLayer * circleBG;
 @property(nonatomic,strong) CAShapeLayer * circle;

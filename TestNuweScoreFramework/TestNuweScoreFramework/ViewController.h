@@ -7,8 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NuweScoreChart/NuweScoreFramework.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NUDialChartDataSource, NUDialChartDelegate>
+
+@property (strong, nonatomic) IBOutlet NUDialChart *BigDialChart;
+@property (strong, nonatomic) IBOutlet NUDialChart *TopDialChart1;
+@property (strong, nonatomic) IBOutlet NUDialChart *TopDialChart2;
+
+
+@property (strong, nonatomic) IBOutlet NUDialChart *BottomDialChart1;
+@property (strong, nonatomic) IBOutlet NUDialChart *BottomDialChart2;
+@property (strong, nonatomic) IBOutlet NUDialChart *BottomDialChart3;
+
+
+
 
 
 @end

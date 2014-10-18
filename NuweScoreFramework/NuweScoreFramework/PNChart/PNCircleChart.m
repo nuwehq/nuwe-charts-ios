@@ -20,8 +20,6 @@ CGFloat getAngleBetweenThreePoints(CGPoint centerPoint, CGPoint p1, CGPoint p2);
     UICountingLabel *_gradeLabel;
     BOOL fControl;
     CGFloat rPrevAngle;
-    
-    
 }
 
 @end
@@ -36,7 +34,6 @@ CGFloat getAngleBetweenThreePoints(CGPoint centerPoint, CGPoint p1, CGPoint p2);
     return _labelColor;
 }
 
-
 - (id)initWithFrame:(CGRect)frame andTotal:(NSNumber *)total andCurrent:(NSNumber *)current andClockwise:(BOOL)clockwise hiddenLabel:(BOOL) hidden {
     self = [super initWithFrame:frame];
     
@@ -50,7 +47,7 @@ CGFloat getAngleBetweenThreePoints(CGPoint centerPoint, CGPoint p1, CGPoint p2);
         CGFloat endAngle = clockwise ? -90.01f : 270.01f;
         
         //        _lineWidth = [NSNumber numberWithFloat:15.0];
-        UIBezierPath* circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.center.x,self.center.y) radius:self.frame.size.height*0.5 startAngle:DEGREES_TO_RADIANS(startAngle) endAngle:DEGREES_TO_RADIANS(endAngle) clockwise:clockwise];
+        UIBezierPath* circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.center.x - self.frame.origin.x,self.center.y - self.frame.origin.y) radius:self.frame.size.height*0.5 startAngle:DEGREES_TO_RADIANS(startAngle) endAngle:DEGREES_TO_RADIANS(endAngle) clockwise:clockwise];
         
         _circle               = [CAShapeLayer layer];
         _circle.path          = circlePath.CGPath;
@@ -117,7 +114,7 @@ CGFloat getAngleBetweenThreePoints(CGPoint centerPoint, CGPoint p1, CGPoint p2);
     [_gradeLabel setTextAlignment:NSTextAlignmentCenter];
     [_gradeLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:_labelFontSize]];
     [_gradeLabel setTextColor:_strokeColor];
-    [_gradeLabel setCenter:CGPointMake(self.center.x,self.center.y)];
+    [_gradeLabel setCenter:CGPointMake(self.center.x - self.frame.origin.x,self.center.y - self.frame.origin.y)];
     [_gradeLabel setBackgroundColor:[UIColor clearColor]];
     _gradeLabel.method = UILabelCountingMethodEaseInOut;
     _gradeLabel.format = @"%d";
@@ -160,7 +157,7 @@ CGFloat getAngleBetweenThreePoints(CGPoint centerPoint, CGPoint p1, CGPoint p2);
     [_gradeLabel setTextAlignment:NSTextAlignmentCenter];
     [_gradeLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:_labelFontSize]];
     [_gradeLabel setTextColor:_strokeColor];
-    [_gradeLabel setCenter:CGPointMake(self.center.x,self.center.y)];
+    [_gradeLabel setCenter:CGPointMake(self.center.x - self.frame.origin.x,self.center.y - self.frame.origin.y)];
     [_gradeLabel setBackgroundColor:[UIColor clearColor]];
     _gradeLabel.method = UILabelCountingMethodEaseInOut;
     _gradeLabel.format = @"%d";
@@ -273,7 +270,6 @@ CGFloat getAngleBetweenThreePoints(CGPoint centerPoint, CGPoint p1, CGPoint p2);
     if ( hide )
         [self performSelector:@selector(setHidden:) withObject:[NSNumber numberWithBool:hide]  afterDelay:_animationDuration];
 }
-
 
 // for editting chart
 
