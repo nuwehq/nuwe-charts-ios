@@ -83,9 +83,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-
 #pragma NUDialChart Datasource
 - (NSNumber*) dialChart:(NUDialChart*) dialChart valueOfCircleAtIndex:(int) _index
 {
@@ -108,8 +105,15 @@
  */ // It's for just Nutribu
 - (NSString* ) dialChart:(NUDialChart*) dialChart textOfCircleAtIndex:(int) _index
 {
-    return [NSString stringWithFormat:@"Test"];
+    return [NSString stringWithFormat:@"test message"];
 }
+
+- (UIColor* ) dialChart:(NUDialChart*) dialChart textColorOfCircleAtIndex:(int) _index
+{
+    
+    return [UIColor whiteColor];
+}
+
 
 /* Show center label and text
  @param : No params

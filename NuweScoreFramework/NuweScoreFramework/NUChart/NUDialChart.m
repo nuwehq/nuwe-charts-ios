@@ -84,7 +84,7 @@
     }
     
     LabelCenterCurrent = [[UICountingLabel alloc] initWithFrame:CGRectMake(0, 0, centerLabelWidth, centerLabelWidth)];
-    LabelCenterCurrent.font = [UIFont systemFontOfSize:(centerLabelWidth / 2)];
+    LabelCenterCurrent.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:(centerLabelWidth / 2)];
     LabelCenterCurrent.textAlignment = NSTextAlignmentCenter;
     LabelCenterCurrent.backgroundColor = [UIColor darkGrayColor];
     LabelCenterCurrent.textColor = [UIColor whiteColor];
@@ -93,7 +93,7 @@
     
     labelTotalValue = [[UILabel alloc] initWithFrame:CGRectMake(0, (centerLabelWidth * 2) / 3, centerLabelWidth, centerLabelWidth / 3)];
     labelTotalValue.textAlignment = NSTextAlignmentCenter;
-    labelTotalValue.font = [UIFont systemFontOfSize:(centerLabelWidth / 6)];
+    labelTotalValue.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:(centerLabelWidth / 6)];
     labelTotalValue.text = [NSString stringWithFormat:@"/ %d", _total];
     labelTotalValue.textColor = [UIColor whiteColor];
     
@@ -102,9 +102,11 @@
     [self addSubview:LabelCenterCurrent];
     
     arrayCircles = [[NSMutableArray alloc] initWithCapacity:_count];
+    arrayTextViews = [[NSMutableArray alloc] initWithCapacity:_count];
     
     for ( int i = 0; i < _count; i++ )
     {
+        // Created circle chart view
         PNCircleChart * _chart = [[PNCircleChart alloc] initWithFrame: CGRectMake(0, 0, overGap + deltaWidth * (i + 1), overGap + deltaWidth * (i + 1))
                                                              andTotal:[NSNumber numberWithInt: totalValue] andCurrent:0 andClockwise:YES hiddenLabel:(_count > 1 ? YES : NO)];
         _chart.lineWidth = [NSNumber numberWithFloat:lineWidth];
@@ -114,6 +116,22 @@
         _chart.center = centerPoint;
         [self addSubview:_chart];
         [arrayCircles addObject:_chart];
+        
+        // Create text view
+        XMCircleTypeView * _textView = [[XMCircleTypeView alloc] initWithFrame:CGRectMake(0, 0, _chart.frame.size.width + lineWidth, _chart.frame.size.height + lineWidth)];
+        _textView.backgroundColor = [UIColor clearColor];
+        _textView.text = @"test";
+        _textView.textAttributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:lineWidth]};
+        _textView.textAlignment = NSTextAlignmentLeft;
+        _textView.verticalTextAlignment = XMCircleTypeVerticalAlignOutside;
+        
+        _textView.baseAngle = 270 * M_PI / 180;
+        _textView.characterSpacing = 0.85;
+        
+        _textView.radius = _chart.frame.size.width / 2 - lineWidth / 2;
+        _textView.center = centerPoint;
+        [self addSubview:_textView];
+        [arrayTextViews addObject:_textView];
     }
     
     if ( _count == 1 )
@@ -145,8 +163,18 @@
         
         if ( [chartDataSource respondsToSelector:@selector(dialChart:textOfCircleAtIndex:)] )
         {
+            XMCircleTypeView * _textView = (XMCircleTypeView*)[arrayTextViews objectAtIndex:i];
             NSString* _text = [chartDataSource dialChart:self textOfCircleAtIndex:i];
-//            _chart.textTitle = _text;
+            _textView.text = _text;
+            [_textView setNeedsDisplay];
+        }
+        
+        if ( [chartDataSource respondsToSelector:@selector(dialChart:textColorOfCircleAtIndex:)] )
+        {
+            XMCircleTypeView * _textView = (XMCircleTypeView*)[arrayTextViews objectAtIndex:i];
+            UIColor * _color = [chartDataSource dialChart:self textColorOfCircleAtIndex:i];
+            [_textView setColor:_color];
+            [_textView setNeedsDisplay];
         }
         
         if ( [chartDataSource respondsToSelector:@selector(dialChart:defaultCircleAtIndex:)] )

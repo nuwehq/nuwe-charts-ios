@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09471CBF19F0F2FE0060E700 /* NUDialChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 09471CBD19F0F2FE0060E700 /* NUDialChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09471CC019F0F2FE0060E700 /* NUDialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 09471CBE19F0F2FE0060E700 /* NUDialChart.m */; };
+		09A65C8819F3D8A5002AFB34 /* XMCircleTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A65C8619F3D8A5002AFB34 /* XMCircleTypeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A65C8919F3D8A5002AFB34 /* XMCircleTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A65C8719F3D8A5002AFB34 /* XMCircleTypeView.m */; };
 		09D66B0819ECB24B0012FE77 /* NuweScoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B0719ECB24B0012FE77 /* NuweScoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D66B1219ECB24B0012FE77 /* NuweScoreFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D66B1119ECB24B0012FE77 /* NuweScoreFrameworkTests.m */; };
 		09D66B3D19ED1C550012FE77 /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B2819ED1C550012FE77 /* PNBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		09471CBD19F0F2FE0060E700 /* NUDialChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUDialChart.h; path = NuweScoreFramework/NUChart/NUDialChart.h; sourceTree = "<group>"; };
 		09471CBE19F0F2FE0060E700 /* NUDialChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUDialChart.m; path = NuweScoreFramework/NUChart/NUDialChart.m; sourceTree = "<group>"; };
+		09A65C8619F3D8A5002AFB34 /* XMCircleTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCircleTypeView.h; sourceTree = "<group>"; };
+		09A65C8719F3D8A5002AFB34 /* XMCircleTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCircleTypeView.m; sourceTree = "<group>"; };
 		09D66B0219ECB24B0012FE77 /* NuweScoreChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuweScoreChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D66B0619ECB24B0012FE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D66B0719ECB24B0012FE77 /* NuweScoreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuweScoreFramework.h; sourceTree = "<group>"; };
@@ -93,9 +97,20 @@
 			name = NUChart;
 			sourceTree = "<group>";
 		};
+		09A65C8519F3D8A5002AFB34 /* XMCircleTypeView */ = {
+			isa = PBXGroup;
+			children = (
+				09A65C8619F3D8A5002AFB34 /* XMCircleTypeView.h */,
+				09A65C8719F3D8A5002AFB34 /* XMCircleTypeView.m */,
+			);
+			name = XMCircleTypeView;
+			path = NuweScoreFramework/XMCircleTypeView;
+			sourceTree = "<group>";
+		};
 		09D66AF819ECB24A0012FE77 = {
 			isa = PBXGroup;
 			children = (
+				09A65C8519F3D8A5002AFB34 /* XMCircleTypeView */,
 				09471CBC19F0F2A50060E700 /* NUChart */,
 				09D66B2719ED1C550012FE77 /* PNChart */,
 				09D66B3A19ED1C550012FE77 /* UICountingLabel */,
@@ -198,6 +213,7 @@
 				09D66B4B19ED1C550012FE77 /* PNLineChartData.h in Headers */,
 				09D66B4D19ED1C550012FE77 /* PNLineChartDataItem.h in Headers */,
 				09D66B4319ED1C550012FE77 /* PNChartLabel.h in Headers */,
+				09A65C8819F3D8A5002AFB34 /* XMCircleTypeView.h in Headers */,
 				09D66B4519ED1C550012FE77 /* PNCircleChart.h in Headers */,
 				09D66B4719ED1C550012FE77 /* PNColor.h in Headers */,
 				09471CBF19F0F2FE0060E700 /* NUDialChart.h in Headers */,
@@ -310,6 +326,7 @@
 				09471CC019F0F2FE0060E700 /* NUDialChart.m in Sources */,
 				09D66B4C19ED1C550012FE77 /* PNLineChartData.m in Sources */,
 				09D66B4419ED1C550012FE77 /* PNChartLabel.m in Sources */,
+				09A65C8919F3D8A5002AFB34 /* XMCircleTypeView.m in Sources */,
 				09D66B4A19ED1C550012FE77 /* PNLineChart.m in Sources */,
 				09D66B4019ED1C550012FE77 /* PNBarChart.m in Sources */,
 				09D66B3E19ED1C550012FE77 /* PNBar.m in Sources */,

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PNCircleChart.h"
 #import "UICountingLabel.h"
+#import "XMCircleTypeView.h"
 
 @class NUDialChart;
 
@@ -44,6 +45,12 @@
  @return : Text of the dial
  */ // It's for just Nutribu
 - (NSString* ) dialChart:(NUDialChart*) dialChart textOfCircleAtIndex:(int) _index;
+
+/* Get a text color of specific dial by index
+ @param : Index of specific dial
+ @return : Text of the dial
+ */ // It's for just Nutribu
+- (UIColor* ) dialChart:(NUDialChart*) dialChart textColorOfCircleAtIndex:(int) _index;
 
 /* Show center label and text
  @param : No params
@@ -94,6 +101,7 @@
 {
     UILabel * labelTotalValue;
     NSMutableArray * arrayCircles;
+    NSMutableArray * arrayTextViews;
     
     int totalValue;
     int circleCount;
