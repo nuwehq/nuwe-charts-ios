@@ -29,7 +29,7 @@
         // Initialization code
         self.backgroundColor = [UIColor whiteColor];
         self.clipsToBounds   = YES;
-        _showLabel           = YES;
+        _showLabel           = NO;
         _barBackgroundColor  = PNLightGrey;
         _labels              = [NSMutableArray array];
         _bars                = [NSMutableArray array];
@@ -130,7 +130,7 @@
 - (UIColor *)barColorAtIndex:(NSUInteger)index
 {
     if ([self.strokeColors count] == [self.yValues count]) {
-        return self.strokeColors[index];
+        return [self lighterColorForColor:(UIColor*) [self.strokeColors objectAtIndex:index]];//self.strokeColors[index];
     } else {
         return self.strokeColor;
     }
@@ -147,10 +147,14 @@
     {
         PNBar * _bar = (PNBar*) [_bars objectAtIndex:i];
         
-        _bar.barColor = APP_COLOR_LIGHT_BLUE;
+        if ( self.strokeColors.count == self.yValues.count )  // existing the stroke colors
+            _bar.barColor = [self lighterColorForColor:(UIColor*) [self.strokeColors objectAtIndex:i]];
+        else
+            _bar.barColor = APP_COLOR_LIGHT_BLUE;
+        
         if ( _bar == bar )
         {
-            _bar.barColor = APP_COLOR_BLUE;
+            _bar.barColor = (UIColor*) [self.strokeColors objectAtIndex:i];
             nIndex = i;
         }
         
@@ -160,6 +164,30 @@
     {
         [pDelegate onClickBarWithIndex:nIndex];
     }
+}
+
+#pragma mark - Utilities
+
+- (UIColor *)lighterColorForColor:(UIColor *)c
+{
+    CGFloat r, g, b, a;
+    if ([c getRed:&r green:&g blue:&b alpha:&a])
+        return [UIColor colorWithRed:MIN(r + 0.2, 1.0)
+                               green:MIN(g + 0.2, 1.0)
+                                blue:MIN(b + 0.2, 1.0)
+                               alpha:a];
+    return nil;
+}
+
+- (UIColor *)darkerColorForColor:(UIColor *)c
+{
+    CGFloat r, g, b, a;
+    if ([c getRed:&r green:&g blue:&b alpha:&a])
+        return [UIColor colorWithRed:MAX(r - 0.2, 0.0)
+                               green:MAX(g - 0.2, 0.0)
+                                blue:MAX(b - 0.2, 0.0)
+                               alpha:a];
+    return nil;
 }
 
 @end

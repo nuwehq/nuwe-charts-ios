@@ -11,6 +11,8 @@
 		09471CC019F0F2FE0060E700 /* NUDialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 09471CBE19F0F2FE0060E700 /* NUDialChart.m */; };
 		09A65C8819F3D8A5002AFB34 /* XMCircleTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A65C8619F3D8A5002AFB34 /* XMCircleTypeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09A65C8919F3D8A5002AFB34 /* XMCircleTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A65C8719F3D8A5002AFB34 /* XMCircleTypeView.m */; };
+		09A65C8D19F3F045002AFB34 /* NUBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A65C8B19F3F045002AFB34 /* NUBarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A65C8E19F3F045002AFB34 /* NUBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A65C8C19F3F045002AFB34 /* NUBarChart.m */; };
 		09D66B0819ECB24B0012FE77 /* NuweScoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B0719ECB24B0012FE77 /* NuweScoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D66B1219ECB24B0012FE77 /* NuweScoreFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D66B1119ECB24B0012FE77 /* NuweScoreFrameworkTests.m */; };
 		09D66B3D19ED1C550012FE77 /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B2819ED1C550012FE77 /* PNBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,7 +35,7 @@
 		09D66B4E19ED1C550012FE77 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D66B3919ED1C550012FE77 /* PNLineChartDataItem.m */; };
 		09D66B4F19ED1C550012FE77 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B3B19ED1C550012FE77 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D66B5019ED1C550012FE77 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D66B3C19ED1C550012FE77 /* UICountingLabel.m */; };
-		09D66B5219EDE6DE0012FE77 /* Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B5119EDE6DE0012FE77 /* Define.h */; };
+		09D66B5219EDE6DE0012FE77 /* Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B5119EDE6DE0012FE77 /* Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		09471CBE19F0F2FE0060E700 /* NUDialChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUDialChart.m; path = NuweScoreFramework/NUChart/NUDialChart.m; sourceTree = "<group>"; };
 		09A65C8619F3D8A5002AFB34 /* XMCircleTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCircleTypeView.h; sourceTree = "<group>"; };
 		09A65C8719F3D8A5002AFB34 /* XMCircleTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCircleTypeView.m; sourceTree = "<group>"; };
+		09A65C8B19F3F045002AFB34 /* NUBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUBarChart.h; path = NuweScoreFramework/NUChart/NUBarChart.h; sourceTree = "<group>"; };
+		09A65C8C19F3F045002AFB34 /* NUBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUBarChart.m; path = NuweScoreFramework/NUChart/NUBarChart.m; sourceTree = "<group>"; };
 		09D66B0219ECB24B0012FE77 /* NuweScoreChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuweScoreChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D66B0619ECB24B0012FE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D66B0719ECB24B0012FE77 /* NuweScoreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuweScoreFramework.h; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 			children = (
 				09471CBD19F0F2FE0060E700 /* NUDialChart.h */,
 				09471CBE19F0F2FE0060E700 /* NUDialChart.m */,
+				09A65C8B19F3F045002AFB34 /* NUBarChart.h */,
+				09A65C8C19F3F045002AFB34 /* NUBarChart.m */,
 			);
 			name = NUChart;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				09471CBF19F0F2FE0060E700 /* NUDialChart.h in Headers */,
 				09D66B4F19ED1C550012FE77 /* UICountingLabel.h in Headers */,
 				09D66B0819ECB24B0012FE77 /* NuweScoreFramework.h in Headers */,
+				09A65C8D19F3F045002AFB34 /* NUBarChart.h in Headers */,
 				09D66B4219ED1C550012FE77 /* PNChartDelegate.h in Headers */,
 				09D66B4119ED1C550012FE77 /* PNChart.h in Headers */,
 				09D66B5219EDE6DE0012FE77 /* Define.h in Headers */,
@@ -329,6 +336,7 @@
 				09A65C8919F3D8A5002AFB34 /* XMCircleTypeView.m in Sources */,
 				09D66B4A19ED1C550012FE77 /* PNLineChart.m in Sources */,
 				09D66B4019ED1C550012FE77 /* PNBarChart.m in Sources */,
+				09A65C8E19F3F045002AFB34 /* NUBarChart.m in Sources */,
 				09D66B3E19ED1C550012FE77 /* PNBar.m in Sources */,
 				09D66B4819ED1C550012FE77 /* PNColor.m in Sources */,
 			);

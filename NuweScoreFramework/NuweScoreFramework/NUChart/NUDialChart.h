@@ -113,7 +113,8 @@
 @property (nonatomic, assign) id<NUDialChartDelegate> chartDelegate;
 
 - (void) setupWithCount:(int) _count TotalValue:(int) _total;
-- (void) setupWithCount:(int) _count TotalValue:(int) _total Frame:(CGRect) _frame;
+- (void) setupWithCount:(int) _count TotalValue:(int) _total LineWidth:(int) _linewidth;
+- (void) setupWithCount:(int) _count TotalValue:(int) _total LineWidth:(int) _linewidth Frame:(CGRect) _frame;
 - (void) reloadDialWithAnimation:(BOOL) animation;
 
 @end

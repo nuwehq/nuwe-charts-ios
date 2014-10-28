@@ -14,11 +14,46 @@
 
 @implementation ViewController
 @synthesize BigDialChart, TopDialChart1, TopDialChart2, BottomDialChart1, BottomDialChart2, BottomDialChart3;
+@synthesize LandBarChart;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    [LandBarChart setupWithFrame:LandBarChart.frame];
+    LandBarChart.hidden = YES;
+    LandBarChart.barDataSource = self;
+    LandBarChart.barDelegate = self;
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown
+    | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+}
+
+-(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    NSLog(@"to orientation = %d", (int)toInterfaceOrientation);
+    
+    if ( toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown )
+    {
+        NSLog(@"Portrait!!!");
+        
+        LandBarChart.hidden = YES;
+    }
+    else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight )
+    {
+        NSLog(@"Landscape!!!");
+        
+        LandBarChart.hidden = NO;
+        [LandBarChart reloadDialWithAnimation:YES];
+    }
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -52,7 +87,7 @@
     
     // initialize part ******************************* */
     
-    [BottomDialChart1 setupWithCount:1 TotalValue:100];
+    [BottomDialChart1 setupWithCount:1 TotalValue:100 LineWidth:10];
     [BottomDialChart1 setChartDataSource:self];
     [BottomDialChart1 setChartDelegate:self];
     [BottomDialChart1 reloadDialWithAnimation:YES];
@@ -114,7 +149,6 @@
     return [UIColor whiteColor];
 }
 
-
 /* Show center label and text
  @param : No params
  @return : Is show center label?
@@ -171,6 +205,32 @@
         [BottomDialChart2 reloadDialWithAnimation:YES];
         [BottomDialChart3 reloadDialWithAnimation:YES];
     }
+}
+
+#pragma mark - NUBarChart Delegates and DataSource
+
+- (void) touchNUBar:(NUBarChart *)barChart index:(int)_index
+{
+    NSLog(@"touch bar index = %d", _index);
+}
+
+
+- (NSArray*) valuesOfYWithBarChart:(NUBarChart *)barChart
+{
+    NSArray* yValues = @[@10, @20, @30, @40, @50];
+    return yValues;
+}
+
+
+- (NSArray*) barColorsWithBarChart:(NUBarChart *)barChart
+{
+    NSArray* barColors = [NSArray arrayWithObjects:APP_COLOR_BLUE, APP_COLOR_RED, APP_COLOR_BLUE, APP_COLOR_BLUE, APP_COLOR_BLUE, nil];
+    return barColors;
+}
+
+- (int) maxYValueWithBarChart:(NUBarChart *)barChart
+{
+    return 100;
 }
 
 @end

@@ -42,6 +42,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" id="fy5-P3-umx" customClass="NUBarChart">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -51,6 +56,7 @@
                         <outlet property="BottomDialChart1" destination="H4S-hX-tFD" id="Xer-6T-wjz"/>
                         <outlet property="BottomDialChart2" destination="ec5-9V-XbR" id="JDp-87-dcI"/>
                         <outlet property="BottomDialChart3" destination="LpD-uM-kRM" id="fBV-wn-Xhr"/>
+                        <outlet property="LandBarChart" destination="fy5-P3-umx" id="oij-9k-q8v"/>
                         <outlet property="TopDialChart1" destination="ZKP-v0-Ges" id="aCM-EB-BVE"/>
                         <outlet property="TopDialChart2" destination="gUz-3z-nWG" id="E1h-pK-tfS"/>
                     </connections>

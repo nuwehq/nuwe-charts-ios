@@ -45,10 +45,10 @@
 
 - (void) setupWithCount:(int) _count TotalValue:(int) _total
 {
-    [self setupWithCount:_count TotalValue:_total Frame:self.frame];
+    [self setupWithCount:_count TotalValue:_total LineWidth:0 Frame:self.frame];
 }
 
-- (void) setupWithCount:(int) _count TotalValue:(int) _total Frame:(CGRect) _frame
+- (void) setupWithCount:(int) _count TotalValue:(int) _total LineWidth:(int) _linewidth Frame:(CGRect) _frame
 {
     circleCount = _count;
     totalValue = _total;
@@ -74,7 +74,13 @@
     float _percent = (float)circleCount / (float)MAX_COUNT;
     centerLabelWidth = _width * (1.0f - _percent);
     float deltaWidth = (float)(_width - centerLabelWidth) / (float)_count;
-    lineWidth = deltaWidth / 2 - 1;
+    
+    if ( _linewidth ){
+        lineWidth = _linewidth;
+        deltaWidth = lineWidth * 2 + 2;
+    }
+    else
+        lineWidth = deltaWidth / 2 - 1;
     overGap = centerLabelWidth - lineWidth;
     
     if ( centerLabelWidth < 1 || overGap < 1 || lineWidth < 1 )
@@ -136,6 +142,11 @@
     
     if ( _count == 1 )
         LabelCenterCurrent.hidden = YES;
+}
+
+- (void) setupWithCount:(int) _count TotalValue:(int) _total LineWidth:(int) _linewidth
+{
+    [self setupWithCount:_count TotalValue:_total LineWidth:_linewidth Frame:self.frame];
 }
 
 - (void) reloadDialWithAnimation:(BOOL) animation
