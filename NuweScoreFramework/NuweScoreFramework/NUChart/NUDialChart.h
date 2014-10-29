@@ -82,7 +82,6 @@
  */
 - (UIColor*) centerBackgroundColorInDialChart:(NUDialChart*) dialChart;
 
-
 @end
 
 
