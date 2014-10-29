@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		09E780641A00441900DEAF00 /* NuweScore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09E780651A00441900DEAF00 /* Build configuration list for PBXAggregateTarget "NuweScore" */;
+			buildPhases = (
+				09E780681A00444000DEAF00 /* CopyFiles */,
+				09E7806A1A00446200DEAF00 /* ShellScript */,
+			);
+			dependencies = (
+				09E7806C1A0044BE00DEAF00 /* PBXTargetDependency */,
+			);
+			name = NuweScore;
+			productName = NuweScore;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		09471CBF19F0F2FE0060E700 /* NUDialChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 09471CBD19F0F2FE0060E700 /* NUDialChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09471CC019F0F2FE0060E700 /* NUDialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 09471CBE19F0F2FE0060E700 /* NUDialChart.m */; };
@@ -36,7 +52,31 @@
 		09D66B4F19ED1C550012FE77 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B3B19ED1C550012FE77 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D66B5019ED1C550012FE77 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D66B3C19ED1C550012FE77 /* UICountingLabel.m */; };
 		09D66B5219EDE6DE0012FE77 /* Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D66B5119EDE6DE0012FE77 /* Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E780691A00445700DEAF00 /* NuweScoreFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09D66B0719ECB24B0012FE77 /* NuweScoreFramework.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09E7806B1A0044BE00DEAF00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09D66AF919ECB24A0012FE77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D66B0119ECB24B0012FE77;
+			remoteInfo = NuweScoreFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09E780681A00444000DEAF00 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				09E780691A00445700DEAF00 /* NuweScoreFramework.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09471CBD19F0F2FE0060E700 /* NUDialChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUDialChart.h; path = NuweScoreFramework/NUChart/NUDialChart.h; sourceTree = "<group>"; };
@@ -281,8 +321,12 @@
 				TargetAttributes = {
 					09D66B0119ECB24B0012FE77 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 846Z76CZ83;
 					};
 					09D66B0C19ECB24B0012FE77 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					09E780641A00441900DEAF00 = {
 						CreatedOnToolsVersion = 6.0;
 					};
 				};
@@ -301,6 +345,7 @@
 			targets = (
 				09D66B0119ECB24B0012FE77 /* NuweScoreFramework */,
 				09D66B0C19ECB24B0012FE77 /* NuweScoreFrameworkTests */,
+				09E780641A00441900DEAF00 /* NuweScore */,
 			);
 		};
 /* End PBXProject section */
@@ -321,6 +366,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09E7806A1A00446200DEAF00 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=\"NuweScore\"\nFMK_VERSION=\"A\"\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09D66AFD19ECB24B0012FE77 /* Sources */ = {
@@ -351,6 +412,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09E7806C1A0044BE00DEAF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D66B0119ECB24B0012FE77 /* NuweScoreFramework */;
+			targetProxy = 09E7806B1A0044BE00DEAF00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		09D66B1319ECB24B0012FE77 /* Debug */ = {
@@ -440,6 +509,7 @@
 		09D66B1619ECB24B0012FE77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -455,6 +525,7 @@
 		09D66B1719ECB24B0012FE77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -497,6 +568,20 @@
 			};
 			name = Release;
 		};
+		09E780661A00441900DEAF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09E780671A00441900DEAF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +608,15 @@
 			buildConfigurations = (
 				09D66B1919ECB24B0012FE77 /* Debug */,
 				09D66B1A19ECB24B0012FE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E780651A00441900DEAF00 /* Build configuration list for PBXAggregateTarget "NuweScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E780661A00441900DEAF00 /* Debug */,
+				09E780671A00441900DEAF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

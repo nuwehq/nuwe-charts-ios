@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0993FD081A006ABC00452D42 /* NuweScoreChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993FD071A006ABC00452D42 /* NuweScoreChart.framework */; };
 		09B09EAA19F25FF6000DEC3B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B09EA919F25FF6000DEC3B /* CoreFoundation.framework */; };
 		09B09EAC19F25FFD000DEC3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B09EAB19F25FFD000DEC3B /* UIKit.framework */; };
 		09B09EAE19F26014000DEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B09EAD19F26014000DEC3B /* Foundation.framework */; };
@@ -19,10 +20,23 @@
 		09D66AE019ECB21A0012FE77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D66ADF19ECB21A0012FE77 /* Images.xcassets */; };
 		09D66AE319ECB21A0012FE77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D66AE119ECB21A0012FE77 /* LaunchScreen.xib */; };
 		09D66AEF19ECB21A0012FE77 /* TestNuweScoreFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D66AEE19ECB21A0012FE77 /* TestNuweScoreFrameworkTests.m */; };
-		09D66B2419ECB2770012FE77 /* NuweScoreChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D66B2119ECB24C0012FE77 /* NuweScoreChart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0993FD0F1A006AEF00452D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09D66B0219ECB24B0012FE77;
+			remoteInfo = NuweScoreFramework;
+		};
+		0993FD111A006AEF00452D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09D66B0D19ECB24B0012FE77;
+			remoteInfo = NuweScoreFrameworkTests;
+		};
 		09D66AE919ECB21A0012FE77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09D66AC719ECB21A0012FE77 /* Project object */;
@@ -30,30 +44,11 @@
 			remoteGlobalIDString = 09D66ACE19ECB21A0012FE77;
 			remoteInfo = TestNuweScoreFramework;
 		};
-		09D66B2019ECB24C0012FE77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D66B1B19ECB24B0012FE77 /* NuweScoreFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 09D66B0219ECB24B0012FE77;
-			remoteInfo = NuweScoreFramework;
-		};
-		09D66B2219ECB24C0012FE77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D66B1B19ECB24B0012FE77 /* NuweScoreFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 09D66B0D19ECB24B0012FE77;
-			remoteInfo = NuweScoreFrameworkTests;
-		};
-		09D66B2519ECB28E0012FE77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D66B1B19ECB24B0012FE77 /* NuweScoreFramework.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 09D66B0119ECB24B0012FE77;
-			remoteInfo = NuweScoreFramework;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0993FD071A006ABC00452D42 /* NuweScoreChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NuweScoreChart.framework; sourceTree = "<group>"; };
+		0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NuweScoreFramework.xcodeproj; path = ../NuweScoreFramework/NuweScoreFramework.xcodeproj; sourceTree = "<group>"; };
 		09B09EA919F25FF6000DEC3B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		09B09EAB19F25FFD000DEC3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09B09EAD19F26014000DEC3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,7 +67,6 @@
 		09D66AE819ECB21A0012FE77 /* TestNuweScoreFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestNuweScoreFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D66AED19ECB21A0012FE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D66AEE19ECB21A0012FE77 /* TestNuweScoreFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNuweScoreFrameworkTests.m; sourceTree = "<group>"; };
-		09D66B1B19ECB24B0012FE77 /* NuweScoreFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NuweScoreFramework.xcodeproj; path = ../NuweScoreFramework/NuweScoreFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0993FD081A006ABC00452D42 /* NuweScoreChart.framework in Frameworks */,
 				09B09EB219F260C9000DEC3B /* libc++.dylib in Frameworks */,
 				09B09EB019F260A2000DEC3B /* CoreGraphics.framework in Frameworks */,
 				09B09EAE19F26014000DEC3B /* Foundation.framework in Frameworks */,
 				09B09EAC19F25FFD000DEC3B /* UIKit.framework in Frameworks */,
 				09B09EAA19F25FF6000DEC3B /* CoreFoundation.framework in Frameworks */,
-				09D66B2419ECB2770012FE77 /* NuweScoreChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,15 +93,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0993FD0A1A006AEE00452D42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0993FD101A006AEF00452D42 /* NuweScoreChart.framework */,
+				0993FD121A006AEF00452D42 /* NuweScoreFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		09D66AC619ECB21A0012FE77 = {
 			isa = PBXGroup;
 			children = (
+				0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */,
+				0993FD071A006ABC00452D42 /* NuweScoreChart.framework */,
 				09B09EB119F260C9000DEC3B /* libc++.dylib */,
 				09B09EAF19F260A2000DEC3B /* CoreGraphics.framework */,
 				09B09EAD19F26014000DEC3B /* Foundation.framework */,
 				09B09EAB19F25FFD000DEC3B /* UIKit.framework */,
 				09B09EA919F25FF6000DEC3B /* CoreFoundation.framework */,
-				09D66B1B19ECB24B0012FE77 /* NuweScoreFramework.xcodeproj */,
 				09D66AD119ECB21A0012FE77 /* TestNuweScoreFramework */,
 				09D66AEB19ECB21A0012FE77 /* TestNuweScoreFrameworkTests */,
 				09D66AD019ECB21A0012FE77 /* Products */,
@@ -164,15 +168,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		09D66B1C19ECB24B0012FE77 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09D66B2119ECB24C0012FE77 /* NuweScoreChart.framework */,
-				09D66B2319ECB24C0012FE77 /* NuweScoreFrameworkTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,7 +182,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				09D66B2619ECB28E0012FE77 /* PBXTargetDependency */,
 			);
 			name = TestNuweScoreFramework;
 			productName = TestNuweScoreFramework;
@@ -243,8 +237,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 09D66B1C19ECB24B0012FE77 /* Products */;
-					ProjectRef = 09D66B1B19ECB24B0012FE77 /* NuweScoreFramework.xcodeproj */;
+					ProductGroup = 0993FD0A1A006AEE00452D42 /* Products */;
+					ProjectRef = 0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -256,18 +250,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		09D66B2119ECB24C0012FE77 /* NuweScoreChart.framework */ = {
+		0993FD101A006AEF00452D42 /* NuweScoreChart.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NuweScoreChart.framework;
-			remoteRef = 09D66B2019ECB24C0012FE77 /* PBXContainerItemProxy */;
+			remoteRef = 0993FD0F1A006AEF00452D42 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		09D66B2319ECB24C0012FE77 /* NuweScoreFrameworkTests.xctest */ = {
+		0993FD121A006AEF00452D42 /* NuweScoreFrameworkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = NuweScoreFrameworkTests.xctest;
-			remoteRef = 09D66B2219ECB24C0012FE77 /* PBXContainerItemProxy */;
+			remoteRef = 0993FD111A006AEF00452D42 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -318,11 +312,6 @@
 			isa = PBXTargetDependency;
 			target = 09D66ACE19ECB21A0012FE77 /* TestNuweScoreFramework */;
 			targetProxy = 09D66AE919ECB21A0012FE77 /* PBXContainerItemProxy */;
-		};
-		09D66B2619ECB28E0012FE77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NuweScoreFramework;
-			targetProxy = 09D66B2519ECB28E0012FE77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +417,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestNuweScoreFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestNuweScoreFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
