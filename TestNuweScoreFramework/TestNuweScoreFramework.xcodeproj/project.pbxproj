@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0993FD081A006ABC00452D42 /* NuweScoreChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993FD071A006ABC00452D42 /* NuweScoreChart.framework */; };
+		091A63951A024824008CA6BE /* NuweScoreChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993FD101A006AEF00452D42 /* NuweScoreChart.framework */; };
 		09B09EAA19F25FF6000DEC3B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B09EA919F25FF6000DEC3B /* CoreFoundation.framework */; };
 		09B09EAC19F25FFD000DEC3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B09EAB19F25FFD000DEC3B /* UIKit.framework */; };
 		09B09EAE19F26014000DEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B09EAD19F26014000DEC3B /* Foundation.framework */; };
@@ -47,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0993FD071A006ABC00452D42 /* NuweScoreChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NuweScoreChart.framework; sourceTree = "<group>"; };
 		0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NuweScoreFramework.xcodeproj; path = ../NuweScoreFramework/NuweScoreFramework.xcodeproj; sourceTree = "<group>"; };
 		09B09EA919F25FF6000DEC3B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		09B09EAB19F25FFD000DEC3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -74,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0993FD081A006ABC00452D42 /* NuweScoreChart.framework in Frameworks */,
+				091A63951A024824008CA6BE /* NuweScoreChart.framework in Frameworks */,
 				09B09EB219F260C9000DEC3B /* libc++.dylib in Frameworks */,
 				09B09EB019F260A2000DEC3B /* CoreGraphics.framework in Frameworks */,
 				09B09EAE19F26014000DEC3B /* Foundation.framework in Frameworks */,
@@ -106,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				0993FD091A006AEE00452D42 /* NuweScoreFramework.xcodeproj */,
-				0993FD071A006ABC00452D42 /* NuweScoreChart.framework */,
 				09B09EB119F260C9000DEC3B /* libc++.dylib */,
 				09B09EAF19F260A2000DEC3B /* CoreGraphics.framework */,
 				09B09EAD19F26014000DEC3B /* Foundation.framework */,
@@ -422,6 +420,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TestNuweScoreFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -436,6 +435,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TestNuweScoreFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
