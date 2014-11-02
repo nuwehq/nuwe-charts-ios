@@ -3,6 +3,9 @@ nuwe-charts
 
 A dynamic chart library for easily creating the Nuwe Score dial chart and History Bar Chart
 
+![nuwe ios app v2 with nutrition_app dial 1](https://cloud.githubusercontent.com/assets/3216491/4875327/3ecdaadc-6292-11e4-8f19-024d4f8ba048.png)
+![nuwe ios app v2 with nutrition_app dials horizontal view](https://cloud.githubusercontent.com/assets/3216491/4875328/3eced380-6292-11e4-9240-189321894901.png)
+
 
 Installation
 =============
