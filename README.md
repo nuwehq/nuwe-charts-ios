@@ -7,6 +7,18 @@ A dynamic chart library for easily creating the Nuwe Score dial chart and Histor
 ![nuwe ios app v2 with nutrition_app dials horizontal view](https://cloud.githubusercontent.com/assets/3216491/4875328/3eced380-6292-11e4-9240-189321894901.png)
 
 
+Requirements
+============
+
+This library works on iOS 7.0 and later versions and is compatible with ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
+
+Foundation.framework
+UIKit.framework
+CoreGraphics.framework
+QuartzCore.framework
+You will need LLVM 3.0 or later in order to build.
+
+
 Installation
 =============
 
@@ -15,6 +27,8 @@ Download the project
 Add the NuweScore.Framework to your project
 
 Make sure to include the Framework in "Link Binary With Libraries"
+
+###TODO: Enable CocoaPods Installation
 
 
 Setup StoryBoard
@@ -140,6 +154,13 @@ For Bar Chart:
 - (void) touchNUBar:(NUBarChart*) barChart index:(int) _index;
 @end
 ```
+
+Demo Project
+=============
+
+In this repo you can locate the `TestNuweScoreFramework` Project.
+
+
 
 License:
 To be determined
