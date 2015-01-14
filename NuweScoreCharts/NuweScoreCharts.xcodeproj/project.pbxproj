@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7B78BD981A115E9D00E4AAD9 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7B78BD9B1A115E9D00E4AAD9 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				7B78BD9E1A115EAE00E4AAD9 /* MultiPlatform Build */,
+			);
+			dependencies = (
+				7B78BD9D1A115EA300E4AAD9 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7B3CA4B31A10E51700545575 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3CA4B21A10E51700545575 /* UIKit.framework */; };
+		7B3CA4E71A10E63100545575 /* NuweScoreCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA49B1A10E4EF00545575 /* NuweScoreCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA50C1A10E65200545575 /* NUBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4EA1A10E65200545575 /* NUBarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA50D1A10E65200545575 /* NUBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4EB1A10E65200545575 /* NUBarChart.m */; };
+		7B3CA50E1A10E65200545575 /* NUDialChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4EC1A10E65200545575 /* NUDialChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA50F1A10E65200545575 /* NUDialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4ED1A10E65200545575 /* NUDialChart.m */; };
+		7B3CA5101A10E65200545575 /* NuweDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4EE1A10E65200545575 /* NuweDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5111A10E65200545575 /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4F01A10E65200545575 /* PNBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5121A10E65200545575 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4F11A10E65200545575 /* PNBar.m */; };
+		7B3CA5131A10E65200545575 /* PNBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4F21A10E65200545575 /* PNBarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5141A10E65200545575 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4F31A10E65200545575 /* PNBarChart.m */; };
+		7B3CA5151A10E65200545575 /* PNChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4F41A10E65200545575 /* PNChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5161A10E65200545575 /* PNChartDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4F51A10E65200545575 /* PNChartDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5171A10E65200545575 /* PNChartLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4F61A10E65200545575 /* PNChartLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5181A10E65200545575 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4F71A10E65200545575 /* PNChartLabel.m */; };
+		7B3CA5191A10E65200545575 /* PNCircleChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4F81A10E65200545575 /* PNCircleChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA51A1A10E65200545575 /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4F91A10E65200545575 /* PNCircleChart.m */; };
+		7B3CA51B1A10E65200545575 /* PNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4FA1A10E65200545575 /* PNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA51C1A10E65200545575 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4FB1A10E65200545575 /* PNColor.m */; };
+		7B3CA51D1A10E65200545575 /* PNLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4FC1A10E65200545575 /* PNLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA51E1A10E65200545575 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4FD1A10E65200545575 /* PNLineChart.m */; };
+		7B3CA51F1A10E65200545575 /* PNLineChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA4FE1A10E65200545575 /* PNLineChartData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5201A10E65200545575 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA4FF1A10E65200545575 /* PNLineChartData.m */; };
+		7B3CA5211A10E65200545575 /* PNLineChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA5001A10E65200545575 /* PNLineChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5221A10E65200545575 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA5011A10E65200545575 /* PNLineChartDataItem.m */; };
+		7B3CA5231A10E65200545575 /* PNPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA5021A10E65200545575 /* PNPieChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5241A10E65200545575 /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA5031A10E65200545575 /* PNPieChart.m */; };
+		7B3CA5251A10E65200545575 /* PNPieChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA5041A10E65200545575 /* PNPieChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5261A10E65200545575 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA5051A10E65200545575 /* PNPieChartDataItem.m */; };
+		7B3CA5271A10E65200545575 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA5071A10E65200545575 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA5281A10E65200545575 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA5081A10E65200545575 /* UICountingLabel.m */; };
+		7B3CA5291A10E65200545575 /* XMCircleTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3CA50A1A10E65200545575 /* XMCircleTypeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B3CA52A1A10E65200545575 /* XMCircleTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CA50B1A10E65200545575 /* XMCircleTypeView.m */; };
+		7B3CA5671A1141BE00545575 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3CA5661A1141BE00545575 /* CoreFoundation.framework */; };
+		7B3CA5691A1141C300545575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3CA5681A1141C300545575 /* Foundation.framework */; };
+		7B3CA56B1A1141E700545575 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3CA56A1A1141E700545575 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B78BD9C1A115EA300E4AAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B3CA4901A10E4EF00545575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B3CA4971A10E4EF00545575;
+			remoteInfo = NuweScoreCharts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B3CA4961A10E4EF00545575 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B3CA4981A10E4EF00545575 /* libNuweScoreCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNuweScoreCharts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3CA49B1A10E4EF00545575 /* NuweScoreCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuweScoreCharts.h; sourceTree = "<group>"; };
+		7B3CA4A91A10E4EF00545575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B3CA4B21A10E51700545575 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B3CA4EA1A10E65200545575 /* NUBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUBarChart.h; sourceTree = "<group>"; };
+		7B3CA4EB1A10E65200545575 /* NUBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUBarChart.m; sourceTree = "<group>"; };
+		7B3CA4EC1A10E65200545575 /* NUDialChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUDialChart.h; sourceTree = "<group>"; };
+		7B3CA4ED1A10E65200545575 /* NUDialChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUDialChart.m; sourceTree = "<group>"; };
+		7B3CA4EE1A10E65200545575 /* NuweDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuweDefine.h; sourceTree = "<group>"; };
+		7B3CA4F01A10E65200545575 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		7B3CA4F11A10E65200545575 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		7B3CA4F21A10E65200545575 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		7B3CA4F31A10E65200545575 /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		7B3CA4F41A10E65200545575 /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		7B3CA4F51A10E65200545575 /* PNChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartDelegate.h; sourceTree = "<group>"; };
+		7B3CA4F61A10E65200545575 /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		7B3CA4F71A10E65200545575 /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		7B3CA4F81A10E65200545575 /* PNCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCircleChart.h; sourceTree = "<group>"; };
+		7B3CA4F91A10E65200545575 /* PNCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCircleChart.m; sourceTree = "<group>"; };
+		7B3CA4FA1A10E65200545575 /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		7B3CA4FB1A10E65200545575 /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		7B3CA4FC1A10E65200545575 /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		7B3CA4FD1A10E65200545575 /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		7B3CA4FE1A10E65200545575 /* PNLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartData.h; sourceTree = "<group>"; };
+		7B3CA4FF1A10E65200545575 /* PNLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartData.m; sourceTree = "<group>"; };
+		7B3CA5001A10E65200545575 /* PNLineChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartDataItem.h; sourceTree = "<group>"; };
+		7B3CA5011A10E65200545575 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
+		7B3CA5021A10E65200545575 /* PNPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
+		7B3CA5031A10E65200545575 /* PNPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
+		7B3CA5041A10E65200545575 /* PNPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
+		7B3CA5051A10E65200545575 /* PNPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChartDataItem.m; sourceTree = "<group>"; };
+		7B3CA5071A10E65200545575 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		7B3CA5081A10E65200545575 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		7B3CA50A1A10E65200545575 /* XMCircleTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCircleTypeView.h; sourceTree = "<group>"; };
+		7B3CA50B1A10E65200545575 /* XMCircleTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCircleTypeView.m; sourceTree = "<group>"; };
+		7B3CA5661A1141BE00545575 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7B3CA5681A1141C300545575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B3CA56A1A1141E700545575 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B3CA4951A10E4EF00545575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3CA56B1A1141E700545575 /* CoreGraphics.framework in Frameworks */,
+				7B3CA5691A1141C300545575 /* Foundation.framework in Frameworks */,
+				7B3CA5671A1141BE00545575 /* CoreFoundation.framework in Frameworks */,
+				7B3CA4B31A10E51700545575 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B3CA48F1A10E4EF00545575 = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4B21A10E51700545575 /* UIKit.framework */,
+				7B3CA56A1A1141E700545575 /* CoreGraphics.framework */,
+				7B3CA5681A1141C300545575 /* Foundation.framework */,
+				7B3CA5661A1141BE00545575 /* CoreFoundation.framework */,
+				7B3CA49A1A10E4EF00545575 /* NuweScoreCharts */,
+				7B3CA4A71A10E4EF00545575 /* NuweScoreChartsTests */,
+				7B3CA4991A10E4EF00545575 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B3CA4991A10E4EF00545575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4981A10E4EF00545575 /* libNuweScoreCharts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B3CA49A1A10E4EF00545575 /* NuweScoreCharts */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA49B1A10E4EF00545575 /* NuweScoreCharts.h */,
+				7B3CA4E81A10E65200545575 /* NuweScoreCharts */,
+			);
+			path = NuweScoreCharts;
+			sourceTree = "<group>";
+		};
+		7B3CA4A71A10E4EF00545575 /* NuweScoreChartsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4A81A10E4EF00545575 /* Supporting Files */,
+			);
+			path = NuweScoreChartsTests;
+			sourceTree = "<group>";
+		};
+		7B3CA4A81A10E4EF00545575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4A91A10E4EF00545575 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B3CA4E81A10E65200545575 /* NuweScoreCharts */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4EE1A10E65200545575 /* NuweDefine.h */,
+				7B3CA4E91A10E65200545575 /* NUChart */,
+				7B3CA4EF1A10E65200545575 /* PNChart */,
+				7B3CA5061A10E65200545575 /* UICountingLabel */,
+				7B3CA5091A10E65200545575 /* XMCircleTypeView */,
+			);
+			path = NuweScoreCharts;
+			sourceTree = "<group>";
+		};
+		7B3CA4E91A10E65200545575 /* NUChart */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4EA1A10E65200545575 /* NUBarChart.h */,
+				7B3CA4EB1A10E65200545575 /* NUBarChart.m */,
+				7B3CA4EC1A10E65200545575 /* NUDialChart.h */,
+				7B3CA4ED1A10E65200545575 /* NUDialChart.m */,
+			);
+			path = NUChart;
+			sourceTree = "<group>";
+		};
+		7B3CA4EF1A10E65200545575 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA4F01A10E65200545575 /* PNBar.h */,
+				7B3CA4F11A10E65200545575 /* PNBar.m */,
+				7B3CA4F21A10E65200545575 /* PNBarChart.h */,
+				7B3CA4F31A10E65200545575 /* PNBarChart.m */,
+				7B3CA4F41A10E65200545575 /* PNChart.h */,
+				7B3CA4F51A10E65200545575 /* PNChartDelegate.h */,
+				7B3CA4F61A10E65200545575 /* PNChartLabel.h */,
+				7B3CA4F71A10E65200545575 /* PNChartLabel.m */,
+				7B3CA4F81A10E65200545575 /* PNCircleChart.h */,
+				7B3CA4F91A10E65200545575 /* PNCircleChart.m */,
+				7B3CA4FA1A10E65200545575 /* PNColor.h */,
+				7B3CA4FB1A10E65200545575 /* PNColor.m */,
+				7B3CA4FC1A10E65200545575 /* PNLineChart.h */,
+				7B3CA4FD1A10E65200545575 /* PNLineChart.m */,
+				7B3CA4FE1A10E65200545575 /* PNLineChartData.h */,
+				7B3CA4FF1A10E65200545575 /* PNLineChartData.m */,
+				7B3CA5001A10E65200545575 /* PNLineChartDataItem.h */,
+				7B3CA5011A10E65200545575 /* PNLineChartDataItem.m */,
+				7B3CA5021A10E65200545575 /* PNPieChart.h */,
+				7B3CA5031A10E65200545575 /* PNPieChart.m */,
+				7B3CA5041A10E65200545575 /* PNPieChartDataItem.h */,
+				7B3CA5051A10E65200545575 /* PNPieChartDataItem.m */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		7B3CA5061A10E65200545575 /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA5071A10E65200545575 /* UICountingLabel.h */,
+				7B3CA5081A10E65200545575 /* UICountingLabel.m */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		7B3CA5091A10E65200545575 /* XMCircleTypeView */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CA50A1A10E65200545575 /* XMCircleTypeView.h */,
+				7B3CA50B1A10E65200545575 /* XMCircleTypeView.m */,
+			);
+			path = XMCircleTypeView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7B3CA4E61A10E61600545575 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3CA5101A10E65200545575 /* NuweDefine.h in Headers */,
+				7B3CA50C1A10E65200545575 /* NUBarChart.h in Headers */,
+				7B3CA5211A10E65200545575 /* PNLineChartDataItem.h in Headers */,
+				7B3CA5251A10E65200545575 /* PNPieChartDataItem.h in Headers */,
+				7B3CA5111A10E65200545575 /* PNBar.h in Headers */,
+				7B3CA51F1A10E65200545575 /* PNLineChartData.h in Headers */,
+				7B3CA5161A10E65200545575 /* PNChartDelegate.h in Headers */,
+				7B3CA5191A10E65200545575 /* PNCircleChart.h in Headers */,
+				7B3CA5131A10E65200545575 /* PNBarChart.h in Headers */,
+				7B3CA5271A10E65200545575 /* UICountingLabel.h in Headers */,
+				7B3CA5171A10E65200545575 /* PNChartLabel.h in Headers */,
+				7B3CA5291A10E65200545575 /* XMCircleTypeView.h in Headers */,
+				7B3CA5151A10E65200545575 /* PNChart.h in Headers */,
+				7B3CA51B1A10E65200545575 /* PNColor.h in Headers */,
+				7B3CA51D1A10E65200545575 /* PNLineChart.h in Headers */,
+				7B3CA5231A10E65200545575 /* PNPieChart.h in Headers */,
+				7B3CA50E1A10E65200545575 /* NUDialChart.h in Headers */,
+				7B3CA4E71A10E63100545575 /* NuweScoreCharts.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7B3CA4971A10E4EF00545575 /* NuweScoreCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B3CA4AC1A10E4EF00545575 /* Build configuration list for PBXNativeTarget "NuweScoreCharts" */;
+			buildPhases = (
+				7B3CA4941A10E4EF00545575 /* Sources */,
+				7B3CA4951A10E4EF00545575 /* Frameworks */,
+				7B3CA4961A10E4EF00545575 /* CopyFiles */,
+				7B3CA4E61A10E61600545575 /* Headers */,
+				7B3CA56E1A1157FC00545575 /* Build Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NuweScoreCharts;
+			productName = NuweScoreCharts;
+			productReference = 7B3CA4981A10E4EF00545575 /* libNuweScoreCharts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B3CA4901A10E4EF00545575 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nu Wellness Ltd";
+				TargetAttributes = {
+					7B3CA4971A10E4EF00545575 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7B78BD981A115E9D00E4AAD9 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 7B3CA4931A10E4EF00545575 /* Build configuration list for PBXProject "NuweScoreCharts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B3CA48F1A10E4EF00545575;
+			productRefGroup = 7B3CA4991A10E4EF00545575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B3CA4971A10E4EF00545575 /* NuweScoreCharts */,
+				7B78BD981A115E9D00E4AAD9 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B3CA56E1A1157FC00545575 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		7B78BD9E1A115EAE00E4AAD9 /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B3CA4941A10E4EF00545575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3CA51E1A10E65200545575 /* PNLineChart.m in Sources */,
+				7B3CA5221A10E65200545575 /* PNLineChartDataItem.m in Sources */,
+				7B3CA51C1A10E65200545575 /* PNColor.m in Sources */,
+				7B3CA5181A10E65200545575 /* PNChartLabel.m in Sources */,
+				7B3CA5201A10E65200545575 /* PNLineChartData.m in Sources */,
+				7B3CA52A1A10E65200545575 /* XMCircleTypeView.m in Sources */,
+				7B3CA5281A10E65200545575 /* UICountingLabel.m in Sources */,
+				7B3CA5141A10E65200545575 /* PNBarChart.m in Sources */,
+				7B3CA5261A10E65200545575 /* PNPieChartDataItem.m in Sources */,
+				7B3CA5121A10E65200545575 /* PNBar.m in Sources */,
+				7B3CA5241A10E65200545575 /* PNPieChart.m in Sources */,
+				7B3CA50D1A10E65200545575 /* NUBarChart.m in Sources */,
+				7B3CA51A1A10E65200545575 /* PNCircleChart.m in Sources */,
+				7B3CA50F1A10E65200545575 /* NUDialChart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B78BD9D1A115EA300E4AAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B3CA4971A10E4EF00545575 /* NuweScoreCharts */;
+			targetProxy = 7B78BD9C1A115EA300E4AAD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7B3CA4AA1A10E4EF00545575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B3CA4AB1A10E4EF00545575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B3CA4AD1A10E4EF00545575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		7B3CA4AE1A10E4EF00545575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		7B78BD991A115E9D00E4AAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B78BD9A1A115E9D00E4AAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B3CA4931A10E4EF00545575 /* Build configuration list for PBXProject "NuweScoreCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B3CA4AA1A10E4EF00545575 /* Debug */,
+				7B3CA4AB1A10E4EF00545575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B3CA4AC1A10E4EF00545575 /* Build configuration list for PBXNativeTarget "NuweScoreCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B3CA4AD1A10E4EF00545575 /* Debug */,
+				7B3CA4AE1A10E4EF00545575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B78BD9B1A115E9D00E4AAD9 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B78BD991A115E9D00E4AAD9 /* Debug */,
+				7B78BD9A1A115E9D00E4AAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B3CA4901A10E4EF00545575 /* Project object */;
+}
