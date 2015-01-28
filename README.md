@@ -2,7 +2,7 @@
 
 <a href="http://www.nuwe.co/"><img src="http://static1.squarespace.com/static/53bc0f5ce4b0239883a34aec/t/53bfc85be4b08ed8da8d3bb5/1421233649774/?format=80w" align="left" hspace="10" vspace="6"></a>
 
-**Nuwe-charts** is an iOS7+ dynamic chart library for easily creating the Nuwe Score dial chart and History Bar Chart. **Nuwe-charts** helps you bring data to life with informative & integrated data charts & It's used inside **Nuwe's** [Applications](http://www.nuwe.co/demoapps/) for showing users the information of there daily activity.
+**Nuwe-charts** is an iOS7+ dynamic chart library for easily creating the Nuwe Score "Dial Chart" and History "Bar Chart". **Nuwe-charts** helps you bring data to life with informative & integrated data charts & it's used inside **Nuwe's** [Demo Applications](http://www.nuwe.co/demoapps/) for showing users the information of their daily activity.
 
 ## Gallery
 
