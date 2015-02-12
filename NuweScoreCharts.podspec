@@ -10,8 +10,7 @@ Pod::Spec.new do |s|
 	s.social_media_url		= 'https://twitter.com/r3trosteve'
 	s.source				= { :git => 'https://github.com/nuwehq/nuwe-charts-ios.git', :tag => s.version.to_s }
 	s.platform				= :ios, '7.0'	
-	s.source_files			= 'JSQMessagesViewController/**/*.{h,m}'
-	s.resources				= 'JSQMessagesViewController/Assets/JSQMessagesAssets.bundle', 'JSQMessagesViewController/Assets/Strings/*.lproj', 'JSQMessagesViewController/**/*.{xib}',
+	s.source_files			= 'NuweScoreCharts/NuweScoreCharts/**/*.{h,m}'
 	s.frameworks			= 'UIKit'
 	s.requires_arc			= true
 end
