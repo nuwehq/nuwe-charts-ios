@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9E111BA7F90C491BFB834053630F44D5F3C35997</key>
-		<string>ideando.git.beanstalkapp.com:/ideando/nuwe-score-framework.git</string>
+		<string>github.com:nuwehq/nuwe-charts-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Framework/NuweScoreDemoApp/NuweScoreDemoApp.xcodeproj</string>
+	<string>NuweScoreDemoApp/NuweScoreDemoApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9E111BA7F90C491BFB834053630F44D5F3C35997</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ideando.git.beanstalkapp.com:/ideando/nuwe-score-framework.git</string>
+	<string>github.com:nuwehq/nuwe-charts-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>9E111BA7F90C491BFB834053630F44D5F3C35997</string>
 			<key>IDESourceControlWCCName</key>
-			<string>o-a17</string>
+			<string>o-a17-public</string>
 		</dict>
 	</array>
 </dict>
